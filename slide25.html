@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="angular.min.js"></script>
+  <style>
+    div{
+      border: 1px solid green;
+        width: 100%;
+        height: 50px;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: yellow;
+    }
+  </style>
+</head>
+<body ng-app="" ng-init="owens=['bill','steve','jack']">
+ <ol>
+     <li ng-repeat="name in owens">
+         {{name}}
+
+     </li>
+ </ol>
+ <div ng-repeat="name in owens">
+    {{name}}
+ </div>
+
+</body>
+</html>
